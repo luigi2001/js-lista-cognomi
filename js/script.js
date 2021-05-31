@@ -1,7 +1,7 @@
 
 /* primo esercizio  */
 
-var mail = prompt('Inserisci la tua mail:');
+/*var mail = prompt('Inserisci la tua mail:');
 console.log (mail);
 
 var iscritti = ['mariorossi12@gmail.com', 'luca.verdi@virgilio.it', 'giovannicairoli@libero.it', 'marcoambrosio@yahoo.com', 'guido.bianchi@gmail.com'];
@@ -19,4 +19,23 @@ while (i < iscritti.length){
     i++;
 }
 
-document.getElementById('risposta').innerHTML = risposta;
+document.getElementById('risposta').innerHTML = risposta;*/
+
+/* secondo esercizio */
+
+var cognome = prompt('inserisci il tuo cognome:');
+console.log (cognome);
+
+var maiuscola = cognome.charAt(0).toUpperCase()+ cognome.slice(1);
+
+var elencoCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
+console.log(elencoCognomi);
+
+elencoCognomi.push(maiuscola);
+console.log(elencoCognomi);
+
+
+document.getElementById('cognomi').innerHTML = elencoCognomi.sort();
+
+
+
