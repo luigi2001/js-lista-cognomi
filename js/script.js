@@ -40,7 +40,7 @@ var position = 0;
 
 for(var i = 0; i < elencoCognomi.length; i++){
     document.getElementById('cognomi').innerHTML = elencoCognomi;
-    if(elencoCognomi[i] == cognome){
+    if(elencoCognomi[i] == maiuscola){
         position = i + 1;
     }
 }
