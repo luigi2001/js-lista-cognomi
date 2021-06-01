@@ -34,8 +34,17 @@ console.log(elencoCognomi);
 elencoCognomi.push(maiuscola);
 console.log(elencoCognomi);
 
+elencoCognomi.sort();
 
-document.getElementById('cognomi').innerHTML = elencoCognomi.sort();
+for(var i = 0; i < elencoCognomi.length; i++){
+    document.getElementById('cognomi').innerHTML = elencoCognomi;
+    if(elencoCognomi[i] == cognome){
+        var position = i + 1;
+    }
+}
+
+
+
 
 
 
