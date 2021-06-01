@@ -36,12 +36,16 @@ console.log(elencoCognomi);
 
 elencoCognomi.sort();
 
+var position = 0;
+
 for(var i = 0; i < elencoCognomi.length; i++){
     document.getElementById('cognomi').innerHTML = elencoCognomi;
     if(elencoCognomi[i] == cognome){
-        var position = i + 1;
+        position = i + 1;
     }
 }
+
+console.log(position);
 
 
 
